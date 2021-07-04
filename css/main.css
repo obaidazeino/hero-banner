@@ -1,23 +1,30 @@
 html {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
 .img-flex {
-  max-height: 500px;
   width: 100%;
+  display: block;
 }
 
 .banner {
   position: relative;
+  overflow: hidden;
+  max-height: 500px;
 }
 
 .text {
   max-width: 50em;
+  width: 93%;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -28,9 +35,10 @@ span {
   font-weight: bold;
   font-size: 4rem;
   color: #fff;
-  background-color: rgba(0, 0, 0, .5)
+  background-color: rgba(0, 0, 0, .5);
 }
 
 p {
   font-size: 2rem;
+  font-style: italic;
 }
